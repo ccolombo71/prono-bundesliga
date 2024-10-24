@@ -194,6 +194,11 @@ df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('Gladbach', 'M\'gladba
 df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('Gladbach', 'M\'gladbach')
 df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('St. Pauli', 'St Pauli')
 df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('St. Pauli', 'St Pauli')
+df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('Mainz 05', 'Mainz')
+df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('Mainz 05', 'Mainz')
+df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('Eint Frankfurt', 'Ein Frankfurt')
+df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('Eint Frankfurt', 'Ein Frankfurt')
+
 df_forecast.reset_index(inplace=True)
 
 X_forecast = df_forecast[['HomeTeam', 'AwayTeam']]
