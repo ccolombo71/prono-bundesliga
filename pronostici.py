@@ -192,8 +192,8 @@ df_forecast = df_forecast.rename(columns={'Casa': 'HomeTeam', 'Ospiti': 'AwayTea
 df_forecast=df_forecast[['Data','HomeTeam', 'AwayTeam']]
 df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('M\'gladbach', 'Gladbatch')
 df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('M\'gladbach', 'Gladbatch')
-df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('St Pauli', 'St.Pauli')
-df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('St Pauli', 'St.Pauli')
+df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('St. Pauli', 'St Pauli')
+df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('St. Pauli', 'St Pauli')
 df_forecast.reset_index(inplace=True)
 
 X_forecast = df_forecast[['HomeTeam', 'AwayTeam']]
